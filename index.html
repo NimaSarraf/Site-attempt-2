@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- Responsive bootstrap personal site -->
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,8 @@
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <style>
-  <!--Style each container -->
     .bg-1 {
+      margin: auto;
       padding-top: 40px;
       padding-bottom: 30px;
       background-color: #4ab8c5;
@@ -44,10 +45,10 @@
       color: #ffffff;
       height: 100%;
     }
-<!--Style the headings -->
+
     h1 {
       font-size: 20px;
-      font-size: 6vw;
+      font-size: 5vw;
       font-size: 4vh;
       font-family: 'Playfair Display', serif;
     }
@@ -63,6 +64,7 @@
       font-size: 4vw;
       font-size: 3vh;
     }
+
     h3 {
       text-align: center;
       margin: auto;
@@ -74,8 +76,8 @@
       font-size: 4vw;
       font-size: 2vh;
     }
-<!--Style the navbar -->
-    .navbar {
+
+      .navbar {
       font: Montserrat;
       padding-top: 5px;
       padding-bottom: 5px;
@@ -106,8 +108,6 @@
     .navbar .navbar-collapse {
       text-align: center;
     }
-
-
   </style>
 </head>
 
@@ -130,18 +130,18 @@
           <li><a href="#github"><span class="glyphicon glyphicon-file" aria-hidden="true"></span>Github</a></li>
           <li><a href="#linkedin" class="current"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>Linkedin</a></li>
           <li><a href="#Contact" class="current"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>Contact Me</a></li>
+        </ul>
       </div>
-      </ul>
     </div>
   </nav>
-  <!--Body Containers -->
+  <!--Create containers -->
   <div id="Home" class="container-fluid bg-1 text-center">
-    <h1 class="margin">Hi, my name is Nima.</h3>
+    <h1>Hi, my name is Nima.</h1>
     <img src="pics/cloud.png" class="img-responsive img-circle margin" style="display:inline" alt="face" width=30% height=30%>
-    <h1>I'm an aspiring Software developer from Sacramento.</h3>
+    <h1>I'm an aspiring Software developer from Sacramento.</h1>
   </div>
   <div id="AboutMe" class="container-fluid bg-2 text-center">
-    <h1 class="margin">About me.</h3>
+    <h1>About me.</h1>
     <img id="PersonalPic" src="pics/personal.png" class="img-responsive img-circle margin" style="display:inline" alt="personal" width=30% height=30%>
     <h2 id="PersonalParagraph">My name is Nima and I am a senior computer science major at Sacramento State University. My journey began 4 years ago as a
     biology major at San Jose State. After a few bio classes, I quickly learned that it was not the major for me, as I did not feel
@@ -155,30 +155,30 @@
     experience and knowledge.</h2>
   </div>
   <div id="github" class="container-fluid bg-3 text-center">
-    <h1 class="margin">My Github.</h3>
+    <h1 class="margin">My Github.</h1>
     <a href="https://github.com/NimaSarraf">
       <img src="pics/github.png" class="img-responsive img-circle margin" style="display:inline" alt="face" width=30% height=30%>
     </a>
     <h1>Click above.</h3>
   </div>
   <div id="linkedin" class="container-fluid bg-4 text-center">
-    <h1 class="margin">My Linkedin.</h3>
+    <h1 class="margin">My Linkedin.</h1>
     <a href="https://www.linkedin.com/in/nima-sarrafzadeh-47339a11a/">
       <img src="pics/linkedin.png" class="img-responsive img-circle margin" style="display:inline" alt="face" width=30% height=30%>
     </a>
-    <h1>Click above.</h3>
+    <h1>Click above.</h1>
   </div>
-  <div id="Contact" class="container-fluid bg-5 text-center" >
+  <div id="Contact" class="container-fluid bg-5 text-center">
     <div class="col-sm-6 col-md-6 col-xs-12">
-    <img id="ContactPic" src="pics/mail.png" alt="mail" width=25% height=25%>
-  </div>
+      <img id="ContactPic" src="pics/mail.png" alt="mail" width=25% height=25%>
+    </div>
     <div class="col-sm-6 col-md-6 col-xs-12" style="padding-top: 20px">
-    <h2> <span class="glyphicon glyphicon-send" aria-hidden="true"></span> Email: NimSarraf@gmail.com</h3>
+      <h2> <span class="glyphicon glyphicon-send" aria-hidden="true"></span> Email: NimSarraf@gmail.com</h3>
     <h2> <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Phone: (408)655-7088</h3>
     <h2> <span class="glyphicon glyphicon-cloud-download" aria-hidden="true"></span> Or message me on LinkedIn!</h3>
     </div>
   </div>
-  <!--Call to bootstrap JS files and smoothscroll js file -->
+  <!--Call to bootstrap JS files and smooth -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="smoothScroll.js"></script>
