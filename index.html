@@ -3,99 +3,142 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width-device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
     .bg-1 {
-      padding-top:40px;
-      padding-bottom:30px;
-      background-color: #58D3F7;
+      padding-top: 40px;
+      padding-bottom: 30px;
+      background-color: #4ab8c5;
       color: #ffffff;
     }
 
     .bg-2 {
-      padding-top:30px;
-      padding-bottom:30px;
-      background-color: #807F7F;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      background-color: #454e4f;
       color: #ffffff;
     }
 
-     .bg-3 {
-      padding-top:30px;
-      padding-bottom:30px;
-      background-color: #9A2EFE;
+    .bg-3 {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      background-color: #471178;
       color: #ffffff;
     }
+
     .bg-4 {
-      padding-top:30px;
-      padding-bottom:30px;
-     background-color: #357BDC;
-     color: #ffffff;
-   }
-
-    body {
-      line-height: 1.8;
-      color: #f5f6f7;
-      font-size: 6em;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      background-color: #164399;
+      color: #ffffff;
     }
+
+    .bg-5 {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      background-color: #cf6856;
+      color: #ffffff;
+    }
+
+
 
     h3 {
-      font-size: 35px;
+      font-size: 20px;
+      font-size: 6vw;
+      font-size: 6vh;
       font-family: 'Playfair Display', serif;
+
     }
 
     h2 {
       text-align: left;
       margin: auto;
       font-family: 'Playfair Display', serif;
-      font-size: 25px;
+
       width: 70%;
       height: 100%;
       padding-bottom: 10px;
+      font-size: 16px;
+      font-size: 4vw;
+      font-size: 4vh;
     }
 
     .navbar {
       font: Montserrat;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      border: 0;
-      border-radius: 0;
-      margin-bottom: 0;
-      font-size: 12px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      width: 100%;
+      height: 1em;
+      top: 0;
+      font-size: 1em;
       letter-spacing: 5px;
+      position: fixed;
     }
+
+    #PersonalPic {
+      float: left;
+      padding: 20px;
+    }
+
+    #PersonalParagraph {
+      float: right;
+    }
+
+    #ContactPic {
+      float: right;
+
+    }
+
+    #ContactList {
+      float: left;
+    }
+
+    .vertical-center {
+      min-height: 100%;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar .navbar-nav {
+      display: inline-block;
+      float: none;
+      vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+      text-align: center;
+    }
+    .html, .body {height: 100%;}
   </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-inverse navbar-fixed">
     <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">Nima Sarrafzadeh</a>
-      </div>
       <div class="collapse navbar-collapse">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#AboutMe">About me</a></li>
-        <li><a href="#github">Github</a></li>
-        <li><a href="#linkedin">Linkedin</a></li>
+        <ul class="nav navbar-nav">
+          <li><a class="active" class="current" href="#Home"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
+          <li><a href="#AboutMe"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>About me</a></li>
+          <li><a href="#github"><span class="glyphicon glyphicon-file" aria-hidden="true"></span>Github</a></li>
+          <li><a href="#linkedin" class="current"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>Linkedin</a></li>
+          <li><a href="#Contact" class="current"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>Contact Me</a></li>
       </div>
       </ul>
     </div>
   </nav>
-  <div class="container-fluid bg-1 text-center">
+  <div id="Home" class="container-fluid bg-1 text-center">
     <h3 class="margin">Hi, my name is Nima.</h3>
-    <img src="pics/cloud.png" class="img-responsive img-circle margin" style="display:inline" alt="face" width="350" height="350">
+    <img src="pics/cloud.png" class="img-responsive img-circle margin" style="display:inline" alt="face" width=30% height=30%>
     <h3>I'm an aspiring Software developer from Sacramento.</h3>
   </div>
   <div id="AboutMe" class="container-fluid bg-2 text-center">
     <h3 class="margin">About me.</h3>
-    <img src="pics/facepic.png" class="img-responsive img-circle margin" style="display:inline" alt="coding" width="350" height="350">
-    <h2>My name is Nima and I am a senior computer science major at Sacramento State University. My journey began 4 years ago as a
+    <img id="PersonalPic" src="pics/personal.png" class="img-responsive img-circle margin" style="display:inline" alt="personal" width=30% height=30%>
+    <h2 id="PersonalParagraph">My name is Nima and I am a senior computer science major at Sacramento State University. My journey began 4 years ago as a
     biology major at San Jose State. After a few bio classes, I quickly learned that it was not the major for me, as I did not feel
     driven or engaged in any of my classes. I knew it was time for change, so I took a step back and went to community college, so
     that I could explore myself a bit more.<br /> <br/>
@@ -109,17 +152,29 @@
   <div id="github" class="container-fluid bg-3 text-center">
     <h3 class="margin">My Github.</h3>
     <a href="https://github.com/NimaSarraf">
-      <img src="pics/github.png" class="img-responsive img-circle margin" style="display:inline" alt="face" width="350" height="350">
+      <img src="pics/github.png" class="img-responsive img-circle margin" style="display:inline" alt="face" width=30% height=30%>
     </a>
     <h3>Click above.</h3>
   </div>
   <div id="linkedin" class="container-fluid bg-4 text-center">
     <h3 class="margin">My Linkedin.</h3>
     <a href="https://www.linkedin.com/in/nima-sarrafzadeh-47339a11a/">
-      <img src="pics/linkedin.png" class="img-responsive img-circle margin" style="display:inline" alt="face" width="350" height="350">
+      <img src="pics/linkedin.png" class="img-responsive img-circle margin" style="display:inline" alt="face" width=30% height=30%>
     </a>
     <h3>Click above.</h3>
   </div>
+  <div id="Contact" class="container-fluid bg-5 vertical-center">
+    <div id="ContactList">
+      <h3>Feel free to contact me for any questions!</h3>
+      <h2> <span class="glyphicon glyphicon-send" aria-hidden="true"></span> Email: NimSarraf@gmail.com</h3>
+      <h2> <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Phone: (408)655-7088</h3>
+      <h2> <span class="glyphicon glyphicon-cloud-download" aria-hidden="true"></span> Or message me on LinkedIn!</h3>
+    </div>
+    <img id="ContactPic" src="pics/mail.png" style="display:inline" alt="face" width=30% height=30%>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="smoothScroll.js"></script>
 </body>
 
 </html>
